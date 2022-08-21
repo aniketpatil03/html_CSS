@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      :root {
+        font-size: 19px;
+        /* :root{} & .html{} means the same*/
+      }
+      body {
+        font-size: 1em;
+      }
+      .grand_parent {
+        font-size: 10px;
+      }
+      .parent {
+        font-size: 4em;
+      }
+      .child {
+        font-size: 15px;
+      }
+      .grand_child {
+        font-size: 2em;
+      }
+      .grand_grand_child {
+        font-size: 1rem;
+        /* addresses the root element, iw :root{} (.html{}) */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grand_parent">
+      grand_parent
+      <div class="parent">
+        Parent
+        <div class="child">
+          child
+          <div class="grand_child">
+            grand_child
+            <div class="grand_grand_child">grand_grand_child</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- conclusion : px is absolute and  is not inherited and em
+   just multiplies its parent size -->
