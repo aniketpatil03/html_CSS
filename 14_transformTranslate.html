@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ABOUT FLEX</title>
+    <style>
+      .parent {
+        border: 3px solid yellow;
+        height: 400px;
+        width: 400px;
+        margin-top: 60px;
+        margin-left: 90px;
+        position: relative;
+      }
+      .circle {
+        border: 2px solid cyan;
+        background-color: white;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        transform: translate(50%, -50%);
+        /* translate(left, right) */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="circle"></div>
+    </div>
+  </body>
+</html>
